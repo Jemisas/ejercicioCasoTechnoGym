@@ -1,0 +1,13 @@
+<mat-card class="example-card" *ngIf="firstParticipant">
+  <mat-card-header>
+    <mat-card-title><h1>First Place Participant</h1></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <img [src]="firstParticipant.photoUrl" alt="Participant Photo" style="width: 100px; height: 100px;">
+    <p>First Name: {{ firstParticipant.firstName }}</p>
+    <p>Last Name: {{ firstParticipant.lastName }}</p>
+    <p>Record Time: {{ firstParticipant.recordTime }}</p>
+    <p>Center ID: {{ firstParticipant.centerId }}</p>
+    <p>Ranking: {{ firstParticipant.ranking }}</p>
+  </mat-card-content>
+</mat-card>
